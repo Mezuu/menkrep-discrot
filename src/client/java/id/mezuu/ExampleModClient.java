@@ -1,4 +1,4 @@
-package com.example;
+package id.mezuu;
 
 import net.fabricmc.api.ClientModInitializer;
 

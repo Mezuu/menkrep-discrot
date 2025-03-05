@@ -1,25 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "menkrep-discrot",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Menkrep Discrot Mod",
+	"description": "Mod untuk para boty",
 	"authors": [
-		"Me!"
+		"Mezuu"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://mezuu.id/",
+		"sources": "https://github.com/mezuu/menkrep-discrot"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/mcdiscrot/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"id.mezuu.mcdiscrot.MenkrepDiscrot"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"id.mezuu.ExampleModClient"
 		]
 	},
 	"mixins": [

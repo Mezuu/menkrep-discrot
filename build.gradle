@@ -36,9 +36,19 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+	implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.0'
+	implementation("net.dv8tion:JDA:5.3.0") { // replace $version with the latest version
+		// Optionally disable audio natives to reduce jar size by excluding `opus-java`
+		// Gradle DSL:
+		 exclude module: 'opus-java'
+		// Kotlin DSL:
+		// exclude(module="opus-java")
+	}
 }
 
 processResources {
